@@ -76,6 +76,14 @@ void	free_env(t_env *env);
 void	set_signal(void);
 
 t_token	*tokenize(char *input);
+int	handle_special_token(char *input, int i, t_token **head);
+int	process_special(char *input, int i, char *buf, int *buf_idx, t_token **head);
+void	process_blank(char *input, int *i, char *buf, int *buf_idx, t_token **head);
+int	handle_quote(char *input, int *i, char *buf, int *buf_idx);
+int	is_special(char c);
+int	is_blank(char c);
+
+
 void	add_token(t_token **head, char *str, t_token_type type);
 void	free_token_list(t_token *head);
 
