@@ -91,5 +91,13 @@ t_cmd	*parse_tokens(t_token *token);
 void	free_cmd_list(t_cmd *cmd);
 //void	print_cmd_list(t_cmd *cmd);
 
-void	execute_cmd(t_cmd *cmd);
+void	execute_cmd(t_cmd *cmd, t_shell *shell);
+
+
+// 환경변수 관련 함수
+char	*get_env_value(t_env *env, char *key);
+char	*expand_env_vars(char *str, t_env *env, int exit_status);
+t_token	*expand_tokens(t_token *tokens, t_env *env, int exit_status);
+
+
 #endif

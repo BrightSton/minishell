@@ -17,7 +17,7 @@ CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 
 SRC = src/main.c src/init.c src/signal.c src/tokenizer.c src/parser.c \
-src/execute.c
+src/execute.c src/env.c
 OBJ = $(SRC:.c=.o)
 
 INCLUDE = -Iincludes -Ilibft

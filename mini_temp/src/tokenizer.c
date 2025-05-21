@@ -164,3 +164,22 @@ t_token	*tokenize(char *input)
 	}
 	return (head);
 }
+
+t_token	*expand_tokens(t_token *tokens, t_env *env, int exit_status)
+{
+	t_token	*current;
+	char	*expanded;
+
+	current = tokens;
+	while (current)
+	{
+		if (current->type == TK_WORD)
+		{
+			expanded = expand_env_vars(current->str, env, exit_status);
+			free(current->str);
+			current->str = expanded;
+		}
+		current = current->next;
+	}
+	return (tokens);
+}

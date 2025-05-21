@@ -22,7 +22,6 @@ void	print_token_list(t_token *head)
 	}
 }
 
-
 int	main(int argc, char **argv, char **envp)
 {
 	
@@ -39,7 +38,6 @@ int	main(int argc, char **argv, char **envp)
 
 	while (1)
 	{
-
 		input = readline("minishell$ ");
 		if (!input)
 		{
@@ -50,11 +48,13 @@ int	main(int argc, char **argv, char **envp)
 			add_history(input);
 
 		tokens = tokenize(input);
+		if (tokens)
+			tokens = expand_tokens(tokens, shell.env, shell.last_exit_status);
 		cmds = parse_tokens(tokens);
 		//print_cmd_list(cmds);
 		//print_token_list(tokens);
 		if (cmds)
-			execute_cmd(cmds);
+			execute_cmd(cmds, &shell);  // 함수 시그니처 변경
 		free_cmd_list(cmds);
 		free_token_list(tokens);
 		free(input);
