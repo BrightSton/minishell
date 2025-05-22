@@ -92,3 +92,86 @@ char	*expand_env_vars(char *str, t_env *env, int exit_status)
 	}
 	return (result);
 }
+
+int	add_env(t_env *env, char *key, char *value)
+{
+	int		i;
+	char	**new_key;
+	char	**new_value;
+
+	i = 0;
+	while (i < env->size)
+	{
+		if (ft_strcmp(env->key[i], key) == 0)
+		{
+			free(env->value[i]);
+			env->value[i] = ft_strdup(value);
+			return (0);
+		}
+		i++;
+	}
+	new_key = malloc(sizeof(char *) * (env->size + 2));
+	new_value = malloc(sizeof(char *) * (env->size + 2));
+	if (!new_key || !new_value)
+		return (1);
+	i = 0;
+	while (i < env->size)
+	{
+		new_key[i] = env->key[i];
+		new_value[i] = env->value[i];
+		i++;
+	}
+	new_key[i] = ft_strdup(key);
+	new_value[i] = ft_strdup(value);
+	new_key[i + 1] = NULL;
+	new_value[i + 1] = NULL;
+	free(env->key);
+	free(env->value);
+	env->key = new_key;
+	env->value =new_value;
+	env->size++;
+	return (0);
+}
+
+int remove_env(t_env *env, char *key)
+{
+	int i;
+	int j;
+	char **new_key;
+	char **new_value;
+
+	i = 0;
+	while (i < env->size && ft_strcmp(env->key[i], key) != 0)
+		i++;
+	if (i == env->size)
+		return (0);
+	new_key = malloc(sizeof(char *) * env->size);
+	new_value = malloc(sizeof(char *) * env->size);
+	if (!new_key || !new_value)
+		return (1);
+	j = 0;
+	i = -1;
+	while (++i < env->size)
+	{
+		if (ft_strcmp(env->key[i], key) != 0)
+		{
+			new_key[j] = env->key[i];
+			new_value[j] = env->value[i];
+			j++;
+		}
+		else
+		{
+			free(env->key[i]);
+			free(env->value[i]);
+		}
+	}
+	new_key[j] = NULL;
+	new_value[j] = NULL;
+	free(env->key);
+	free(env->value);
+	env->key = new_key;
+	env->value = new_value;
+	env->size--;
+	return (0);
+}
+

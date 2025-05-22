@@ -139,69 +139,166 @@ static void	apply_redir(t_cmd *cmd)
 
 
 
-void	execute_cmd(t_cmd *cmd, t_shell *shell)
-{
-	int		pipefd[2];
-	int		prev_read;
-	pid_t	pid;
-	int		is_last;
-	int		status;
+//void	execute_cmd(t_cmd *cmd, t_shell *shell)
+//{
+//	int		pipefd[2];
+//	int		prev_read;
+//	pid_t	pid;
+//	int		is_last;
+//	int		status;
 
-	prev_read = -1;
-	while (cmd)
-	{
-		is_last = (cmd->next == NULL);
-		if (!cmd->argv || !cmd->argv[0])
-		{
-			cmd = cmd->next;
-			continue;
-		}
-		if (!is_last)
-		{
-			if (pipe(pipefd) < 0)
-			{
-				perror("pipe");
-				return;
-			}
-		}
-		pid = fork();
-		if (pid < 0)
-		{
-			perror("fork");
-			return;
-		}
-		if (pid == 0)
-		{
-			apply_redir(cmd);
-			if (prev_read != -1)
-			{
-				dup2(prev_read, 0);
-				close(prev_read);
-			}
-			if (!is_last)
-			{
-				dup2(pipefd[1], 1);
-				close(pipefd[0]);
-				close(pipefd[1]);
-			}
-			execvp(cmd->argv[0], cmd->argv);
-			perror("execvp");
-			_exit(1);
-		}
-		if (prev_read != -1)
-			close(prev_read);
-		if (!is_last)
-		{
-			close(pipefd[1]);
-			prev_read = pipefd[0];
-		}
-		cmd = cmd->next;
-	}
-	while (wait(&status) > 0)
-	{
-		if (WIFEXITED(status))
-			shell->last_exit_status = WEXITSTATUS(status);
-		else if (WIFSIGNALED(status))
-			shell->last_exit_status = 128 + WTERMSIG(status);
-	}
+//	prev_read = -1;
+//	while (cmd)
+//	{
+//		is_last = (cmd->next == NULL);
+//		if (!cmd->argv || !cmd->argv[0])
+//		{
+//			cmd = cmd->next;
+//			continue;
+//		}
+//		if (!is_last)
+//		{
+//			if (pipe(pipefd) < 0)
+//			{
+//				perror("pipe");
+//				return;
+//			}
+//		}
+//		pid = fork();
+//		if (pid < 0)
+//		{
+//			perror("fork");
+//			return;
+//		}
+//		if (pid == 0)
+//		{
+//			apply_redir(cmd);
+//			if (prev_read != -1)
+//			{
+//				dup2(prev_read, 0);
+//				close(prev_read);
+//			}
+//			if (!is_last)
+//			{
+//				dup2(pipefd[1], 1);
+//				close(pipefd[0]);
+//				close(pipefd[1]);
+//			}
+//			execvp(cmd->argv[0], cmd->argv);
+//			perror("execvp");
+//			_exit(1);
+//		}
+//		if (prev_read != -1)
+//			close(prev_read);
+//		if (!is_last)
+//		{
+//			close(pipefd[1]);
+//			prev_read = pipefd[0];
+//		}
+//		cmd = cmd->next;
+//	}
+//	while (wait(&status) > 0)
+//	{
+//		if (WIFEXITED(status))
+//			shell->last_exit_status = WEXITSTATUS(status);
+//		else if (WIFSIGNALED(status))
+//			shell->last_exit_status = 128 + WTERMSIG(status);
+//	}
+//}
+
+void execute_cmd(t_cmd *cmd, t_shell *shell)
+{
+    int pipefd[2];
+    int prev_read;
+    pid_t pid;
+    int is_last;
+    int status;
+
+    prev_read = -1;
+    while (cmd)
+    {
+        is_last = (cmd->next == NULL);
+        
+        // 명령어가 없는 경우 스킵
+        if (!cmd->argv || !cmd->argv[0])
+        {
+            cmd = cmd->next;
+            continue;
+        }
+        
+        // 빌트인 명령어 처리 (파이프가 없는 경우에만)
+        if (is_last && prev_read == -1 && is_builtin(cmd->argv[0]))
+        {
+            shell->last_exit_status = execute_builtin(cmd, shell);
+            cmd = cmd->next;
+            continue;
+        }
+        
+        if (!is_last)
+        {
+            if (pipe(pipefd) < 0)
+            {
+                perror("pipe");
+                return;
+            }
+        }
+        
+        pid = fork();
+        if (pid < 0)
+        {
+            perror("fork");
+            return;
+        }
+        
+        if (pid == 0)
+        {
+            // 리다이렉션 적용
+            apply_redir(cmd);
+            
+            // stdin 연결: 이전 파이프 read end
+            if (prev_read != -1)
+            {
+                dup2(prev_read, 0);
+                close(prev_read);
+            }
+            
+            // stdout 연결: 다음 파이프 write end
+            if (!is_last)
+            {
+                dup2(pipefd[1], 1);
+                close(pipefd[0]);
+                close(pipefd[1]);
+            }
+            
+            // 빌트인 명령어 처리
+            if (is_builtin(cmd->argv[0]))
+            {
+                exit(execute_builtin(cmd, shell));
+            }
+            
+            execvp(cmd->argv[0], cmd->argv);
+            perror("execvp");
+            _exit(1);
+        }
+        
+        // 부모 프로세스 fd 정리
+        if (prev_read != -1)
+            close(prev_read);
+        if (!is_last)
+        {
+            close(pipefd[1]);
+            prev_read = pipefd[0];
+        }
+        
+        cmd = cmd->next;
+    }
+    
+    // 모든 자식 프로세스 대기
+    while (wait(&status) > 0)
+    {
+        if (WIFEXITED(status))
+            shell->last_exit_status = WEXITSTATUS(status);
+        else if (WIFSIGNALED(status))
+            shell->last_exit_status = 128 + WTERMSIG(status);
+    }
 }

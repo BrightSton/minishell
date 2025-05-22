@@ -99,5 +99,20 @@ char	*get_env_value(t_env *env, char *key);
 char	*expand_env_vars(char *str, t_env *env, int exit_status);
 t_token	*expand_tokens(t_token *tokens, t_env *env, int exit_status);
 
+// 환경변수 관련 함수
+int add_env(t_env *env, char *key, char *value);
+int remove_env(t_env *env, char *key);
+
+// 빌트인 명령어 관련 함수
+int is_builtin(char *cmd);
+int ft_echo(char **args);
+int ft_cd(char **args, t_env *env);
+int ft_pwd(void);
+int ft_env(t_env *env);
+int ft_export(char **args, t_env *env);
+int ft_unset(char **args, t_env *env);
+int ft_exit(char **args, t_shell *shell);
+int execute_builtin(t_cmd *cmd, t_shell *shell);
+
 
 #endif
