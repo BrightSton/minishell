@@ -70,4 +70,5 @@ t_list			*ft_lstmap(t_list *lst, void *(*f)(void *)\
 
 
 int ft_strcmp(char *s1, char *s2); // strncmp에 추가됨
+char	*ft_strcpy(char *dst, const char *src);
 #endif

@@ -37,12 +37,21 @@ typedef enum e_token_type
 	TK_HEREDOC
 }	t_token_type;
 
+//typedef struct s_token
+//{
+//	char			*str;
+//	t_token_type	type;
+//	struct s_token	*next;
+//}	t_token;
+
 typedef struct s_token
 {
 	char			*str;
 	t_token_type	type;
+	int				quote_type; // 0: 따옴표 없음, 1: 작은따옴표, 2: 큰따옴표
 	struct s_token	*next;
-}	t_token;
+} t_token;
+
 
 typedef struct s_redir
 {
@@ -114,5 +123,17 @@ int ft_unset(char **args, t_env *env);
 int ft_exit(char **args, t_shell *shell);
 int execute_builtin(t_cmd *cmd, t_shell *shell);
 
+
+// 시그널 관련 함수
+void	set_signal_child(void);
+void	set_signal_heredoc(void);
+void	sigquit_handler(int signo);
+
+////
+void handle_heredoc(t_cmd *cmd);
+
+
+//
+void add_token_with_quote(t_token **head, char *str, t_token_type type, int quote_type);
 
 #endif

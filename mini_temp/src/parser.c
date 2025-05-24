@@ -96,9 +96,18 @@ t_cmd	*parse_tokens(t_token *token)
 		else if (token->type == TK_REDIR_IN || token->type == TK_REDIR_OUT
 			|| token->type == TK_REDIR_APPEND || token->type == TK_HEREDOC)
 		{
-			if (token->next)
+			if (token->next && token->next->type == TK_WORD)
+			{
 				add_redir(cur_cmd, token->type, token->next->str);
-			token = token->next;
+				token = token->next;
+			}
+			else
+			{
+				printf("minishell: syntax error near unexpected token\n");
+				free_cmd_list(cmd_head);
+				return (NULL);
+			}
+
 		}
 		token = token->next;
 	}
@@ -161,3 +170,16 @@ void	print_cmd_list(t_cmd *cmd)
 	}
 }
 
+//static int validate_redirection(t_token *token)
+//{
+//	if (!token)
+//		return (0);
+
+//	if (token->type == TK_REDIR_IN || token->type == TK_REDIR_OUT ||
+//		token->type == TK_REDIR_APPEND || token->type == TK_HEREDOC)
+//	{
+//		if (!token->next || token->next->type != TK_WORD)
+//			return (0);
+//	}
+//	return (1);
+//}
