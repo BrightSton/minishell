@@ -1,0 +1,2079 @@
+minishell$ nonexistentcommand
+execvp: No such file or directory
+==1988300== 
+==1988300== HEAP SUMMARY:
+==1988300==     in use at exit: 213,172 bytes in 370 blocks
+==1988300==   total heap usage: 728 allocs, 358 frees, 236,663 bytes allocated
+==1988300== 
+==1988300== 16 bytes in 1 blocks are still reachable in loss record 10 of 77
+==1988300==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988300==    by 0x10A28D: create_new_argv (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x10A346: add_arg (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x10A65A: process_token (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988300== 
+==1988300== 19 bytes in 1 blocks are still reachable in loss record 12 of 77
+==1988300==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988300==    by 0x10CF2D: ft_strjoin (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x10B5A4: handle_regular_char (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x10B778: expand_env_vars (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x10A1DE: expand_tokens (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x1093AA: process_input (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988300== 
+==1988300== 19 bytes in 1 blocks are still reachable in loss record 13 of 77
+==1988300==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988300==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x10A391: add_arg (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x10A65A: process_token (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988300== 
+==1988300== 24 bytes in 1 blocks are still reachable in loss record 15 of 77
+==1988300==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988300==    by 0x109537: allocate_env (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988300== 
+==1988300== 24 bytes in 1 blocks are still reachable in loss record 18 of 77
+==1988300==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988300==    by 0x109B38: add_token_with_quote (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x109F43: finalize_tokenize (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x10A170: tokenize (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988300== 
+==1988300== 24 bytes in 1 blocks are still reachable in loss record 19 of 77
+==1988300==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988300==    by 0x10A22B: create_new_cmd (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x10A5BD: process_token (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988300== 
+==1988300== 480 bytes in 1 blocks are still reachable in loss record 33 of 77
+==1988300==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988300==    by 0x10956A: allocate_env (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988300== 
+==1988300== 480 bytes in 1 blocks are still reachable in loss record 34 of 77
+==1988300==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988300==    by 0x109588: allocate_env (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988300== 
+==1988300== 751 bytes in 59 blocks are still reachable in loss record 37 of 77
+==1988300==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988300==    by 0x10CE73: ft_substr (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x109647: parse_env_var (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x1096E7: init_env (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988300== 
+==1988300== 2,824 bytes in 59 blocks are still reachable in loss record 52 of 77
+==1988300==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988300==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x109670: parse_env_var (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x1096E7: init_env (in /home/djang/mini_temp3/minishell)
+==1988300==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988300== 
+==1988300== LEAK SUMMARY:
+==1988300==    definitely lost: 0 bytes in 0 blocks
+==1988300==    indirectly lost: 0 bytes in 0 blocks
+==1988300==      possibly lost: 0 bytes in 0 blocks
+==1988300==    still reachable: 4,661 bytes in 126 blocks
+==1988300==         suppressed: 208,511 bytes in 244 blocks
+==1988300== 
+==1988300== For lists of detected and suppressed errors, rerun with: -s
+==1988300== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+
+minishell$ env | grep HOME
+HOME=/home/djang
+==1988544== 
+==1988544== HEAP SUMMARY:
+==1988544==     in use at exit: 214,525 bytes in 455 blocks
+==1988544==   total heap usage: 1,492 allocs, 1,037 frees, 246,954 bytes allocated
+==1988544== 
+==1988544== 2 bytes in 1 blocks are still reachable in loss record 1 of 81
+==1988544==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988544==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x109912: add_token (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x109DD8: handle_special_token (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x109CD1: process_special (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x10A040: tokenize (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988544== 
+==1988544== 14 bytes in 3 blocks are still reachable in loss record 9 of 81
+==1988544==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988544==    by 0x10CF2D: ft_strjoin (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x10B5A4: handle_regular_char (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x10B778: expand_env_vars (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x10A1DE: expand_tokens (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x1093AA: process_input (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988544== 
+==1988544== 14 bytes in 3 blocks are still reachable in loss record 10 of 81
+==1988544==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988544==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x10A391: add_arg (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x10A65A: process_token (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988544== 
+==1988544== 24 bytes in 1 blocks are still reachable in loss record 15 of 81
+==1988544==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988544==    by 0x109537: allocate_env (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988544== 
+==1988544== 24 bytes in 1 blocks are still reachable in loss record 18 of 81
+==1988544==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988544==    by 0x109B38: add_token_with_quote (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x109F43: finalize_tokenize (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x10A170: tokenize (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988544== 
+==1988544== 24 bytes in 1 blocks are still reachable in loss record 19 of 81
+==1988544==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988544==    by 0x10A22B: create_new_cmd (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x10A5BD: process_token (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988544== 
+==1988544== 24 bytes in 1 blocks are still reachable in loss record 20 of 81
+==1988544==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988544==    by 0x1098EC: add_token (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x109DD8: handle_special_token (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x109CD1: process_special (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x10A040: tokenize (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988544== 
+==1988544== 24 bytes in 1 blocks are still reachable in loss record 21 of 81
+==1988544==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988544==    by 0x10A22B: create_new_cmd (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x10A4D6: handle_pipe_token (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x10A60C: process_token (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988544== 
+==1988544== 40 bytes in 2 blocks are still reachable in loss record 22 of 81
+==1988544==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988544==    by 0x10A28D: create_new_argv (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x10A346: add_arg (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x10A65A: process_token (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988544== 
+==1988544== 48 bytes in 2 blocks are still reachable in loss record 26 of 81
+==1988544==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988544==    by 0x1098EC: add_token (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x109C51: process_blank (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x109FEA: tokenize (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988544== 
+==1988544== 480 bytes in 1 blocks are still reachable in loss record 36 of 81
+==1988544==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988544==    by 0x10BCD5: remove_env (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x10C35B: ft_unset (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x10C7EB: execute_builtin (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x10AD71: handle_builtin_only (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x10AE62: process_single_cmd (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x10AF6D: execute_cmd (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x1093D8: process_input (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988544== 
+==1988544== 480 bytes in 1 blocks are still reachable in loss record 37 of 81
+==1988544==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988544==    by 0x10BCEE: remove_env (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x10C35B: ft_unset (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x10C7EB: execute_builtin (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x10AD71: handle_builtin_only (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x10AE62: process_single_cmd (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x10AF6D: execute_cmd (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x1093D8: process_input (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988544== 
+==1988544== 751 bytes in 59 blocks are still reachable in loss record 40 of 81
+==1988544==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988544==    by 0x10CE73: ft_substr (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x109647: parse_env_var (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x1096E7: init_env (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988544== 
+==1988544== 2,824 bytes in 59 blocks are still reachable in loss record 56 of 81
+==1988544==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988544==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x109670: parse_env_var (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x1096E7: init_env (in /home/djang/mini_temp3/minishell)
+==1988544==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988544== 
+==1988544== LEAK SUMMARY:
+==1988544==    definitely lost: 0 bytes in 0 blocks
+==1988544==    indirectly lost: 0 bytes in 0 blocks
+==1988544==      possibly lost: 0 bytes in 0 blocks
+==1988544==    still reachable: 4,773 bytes in 136 blocks
+==1988544==         suppressed: 209,752 bytes in 319 blocks
+==1988544== 
+==1988544== For lists of detected and suppressed errors, rerun with: -s
+==1988544== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+minishell$ exit 42
+exit
+==1988257== 
+==1988257== HEAP SUMMARY:
+==1988257==     in use at exit: 214,459 bytes in 451 blocks
+==1988257==   total heap usage: 1,517 allocs, 1,066 frees, 247,219 bytes allocated
+==1988257== 
+==1988257== 8 bytes in 2 blocks are still reachable in loss record 4 of 78
+==1988257==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988257==    by 0x10CF2D: ft_strjoin (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x10B5A4: handle_regular_char (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x10B778: expand_env_vars (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x10A1DE: expand_tokens (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x1093AA: process_input (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988257== 
+==1988257== 8 bytes in 2 blocks are still reachable in loss record 5 of 78
+==1988257==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988257==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x10A391: add_arg (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x10A65A: process_token (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988257== 
+==1988257== 24 bytes in 1 blocks are still reachable in loss record 14 of 78
+==1988257==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988257==    by 0x109537: allocate_env (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988257== 
+==1988257== 24 bytes in 1 blocks are still reachable in loss record 17 of 78
+==1988257==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988257==    by 0x109B38: add_token_with_quote (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x109F43: finalize_tokenize (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x10A170: tokenize (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988257== 
+==1988257== 24 bytes in 1 blocks are still reachable in loss record 18 of 78
+==1988257==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988257==    by 0x10A22B: create_new_cmd (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x10A5BD: process_token (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988257== 
+==1988257== 24 bytes in 1 blocks are still reachable in loss record 19 of 78
+==1988257==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988257==    by 0x10A28D: create_new_argv (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x10A346: add_arg (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x10A65A: process_token (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988257== 
+==1988257== 24 bytes in 1 blocks are still reachable in loss record 20 of 78
+==1988257==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988257==    by 0x1098EC: add_token (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x109C51: process_blank (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x109FEA: tokenize (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988257== 
+==1988257== 480 bytes in 1 blocks are still reachable in loss record 33 of 78
+==1988257==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988257==    by 0x10BCD5: remove_env (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x10C35B: ft_unset (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x10C7EB: execute_builtin (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x10AD71: handle_builtin_only (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x10AE62: process_single_cmd (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x10AF6D: execute_cmd (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x1093D8: process_input (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988257== 
+==1988257== 480 bytes in 1 blocks are still reachable in loss record 34 of 78
+==1988257==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988257==    by 0x10BCEE: remove_env (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x10C35B: ft_unset (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x10C7EB: execute_builtin (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x10AD71: handle_builtin_only (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x10AE62: process_single_cmd (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x10AF6D: execute_cmd (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x1093D8: process_input (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988257== 
+==1988257== 751 bytes in 59 blocks are still reachable in loss record 37 of 78
+==1988257==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988257==    by 0x10CE73: ft_substr (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x109647: parse_env_var (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x1096E7: init_env (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988257== 
+==1988257== 2,824 bytes in 59 blocks are still reachable in loss record 53 of 78
+==1988257==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988257==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x109670: parse_env_var (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x1096E7: init_env (in /home/djang/mini_temp3/minishell)
+==1988257==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988257== 
+==1988257== LEAK SUMMARY:
+==1988257==    definitely lost: 0 bytes in 0 blocks
+==1988257==    indirectly lost: 0 bytes in 0 blocks
+==1988257==      possibly lost: 0 bytes in 0 blocks
+==1988257==    still reachable: 4,671 bytes in 129 blocks
+==1988257==         suppressed: 209,788 bytes in 322 blocks
+==1988257== 
+==1988257== For lists of detected and suppressed errors, rerun with: -s
+==1988257== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+
+minishell$ echo hello | cat
+hello
+==1988629== 
+==1988629== HEAP SUMMARY:
+==1988629==     in use at exit: 213,066 bytes in 365 blocks
+==1988629==   total heap usage: 627 allocs, 262 frees, 234,004 bytes allocated
+==1988629== 
+==1988629== 2 bytes in 1 blocks are still reachable in loss record 1 of 81
+==1988629==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988629==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x109912: add_token (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x109DD8: handle_special_token (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x109CD1: process_special (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x10A040: tokenize (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988629== 
+==1988629== 15 bytes in 3 blocks are still reachable in loss record 10 of 81
+==1988629==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988629==    by 0x10CF2D: ft_strjoin (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x10B5A4: handle_regular_char (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x10B778: expand_env_vars (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x10A1DE: expand_tokens (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x1093AA: process_input (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988629== 
+==1988629== 15 bytes in 3 blocks are still reachable in loss record 11 of 81
+==1988629==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988629==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x10A391: add_arg (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x10A65A: process_token (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988629== 
+==1988629== 24 bytes in 1 blocks are still reachable in loss record 15 of 81
+==1988629==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988629==    by 0x109537: allocate_env (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988629== 
+==1988629== 24 bytes in 1 blocks are still reachable in loss record 18 of 81
+==1988629==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988629==    by 0x1098EC: add_token (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x109DD8: handle_special_token (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x109CD1: process_special (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x10A040: tokenize (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988629== 
+==1988629== 24 bytes in 1 blocks are still reachable in loss record 19 of 81
+==1988629==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988629==    by 0x109B38: add_token_with_quote (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x109F43: finalize_tokenize (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x10A170: tokenize (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988629== 
+==1988629== 24 bytes in 1 blocks are still reachable in loss record 20 of 81
+==1988629==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988629==    by 0x10A22B: create_new_cmd (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x10A5BD: process_token (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988629== 
+==1988629== 24 bytes in 1 blocks are still reachable in loss record 21 of 81
+==1988629==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988629==    by 0x10A22B: create_new_cmd (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x10A4D6: handle_pipe_token (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x10A60C: process_token (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988629== 
+==1988629== 40 bytes in 2 blocks are still reachable in loss record 24 of 81
+==1988629==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988629==    by 0x10A28D: create_new_argv (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x10A346: add_arg (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x10A65A: process_token (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988629== 
+==1988629== 48 bytes in 2 blocks are still reachable in loss record 29 of 81
+==1988629==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988629==    by 0x1098EC: add_token (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x109C51: process_blank (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x109FEA: tokenize (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988629== 
+==1988629== 480 bytes in 1 blocks are still reachable in loss record 37 of 81
+==1988629==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988629==    by 0x10956A: allocate_env (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988629== 
+==1988629== 480 bytes in 1 blocks are still reachable in loss record 38 of 81
+==1988629==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988629==    by 0x109588: allocate_env (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988629== 
+==1988629== 751 bytes in 59 blocks are still reachable in loss record 41 of 81
+==1988629==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988629==    by 0x10CE73: ft_substr (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x109647: parse_env_var (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x1096E7: init_env (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988629== 
+==1988629== 2,824 bytes in 59 blocks are still reachable in loss record 56 of 81
+==1988629==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988629==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x109670: parse_env_var (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x1096E7: init_env (in /home/djang/mini_temp3/minishell)
+==1988629==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988629== 
+==1988629== LEAK SUMMARY:
+==1988629==    definitely lost: 0 bytes in 0 blocks
+==1988629==    indirectly lost: 0 bytes in 0 blocks
+==1988629==      possibly lost: 0 bytes in 0 blocks
+==1988629==    still reachable: 4,775 bytes in 136 blocks
+==1988629==         suppressed: 208,291 bytes in 229 blocks
+==1988629== 
+==1988629== For lists of detected and suppressed errors, rerun with: -s
+==1988629== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+minishell$ echo "test content" > test.txt
+==1988672== 
+==1988672== HEAP SUMMARY:
+==1988672==     in use at exit: 213,341 bytes in 376 blocks
+==1988672==   total heap usage: 851 allocs, 475 frees, 236,605 bytes allocated
+==1988672== 
+==1988672== 2 bytes in 1 blocks are still reachable in loss record 1 of 83
+==1988672==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988672==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x109912: add_token (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x109E06: handle_special_token (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x109CD1: process_special (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x10A040: tokenize (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988672== 
+==1988672== 9 bytes in 1 blocks are still reachable in loss record 4 of 83
+==1988672==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988672==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x10A43E: add_redir (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x10A58E: handle_redir_token (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x10A691: process_token (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988672== 
+==1988672== 18 bytes in 2 blocks are still reachable in loss record 12 of 83
+==1988672==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988672==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x10A391: add_arg (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x10A65A: process_token (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988672== 
+==1988672== 24 bytes in 1 blocks are still reachable in loss record 14 of 83
+==1988672==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988672==    by 0x109537: allocate_env (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988672== 
+==1988672== 24 bytes in 1 blocks are still reachable in loss record 17 of 83
+==1988672==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988672==    by 0x1098EC: add_token (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x109C51: process_blank (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x109FEA: tokenize (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988672== 
+==1988672== 24 bytes in 1 blocks are still reachable in loss record 18 of 83
+==1988672==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988672==    by 0x109B38: add_token_with_quote (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x109F43: finalize_tokenize (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x10A170: tokenize (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988672== 
+==1988672== 24 bytes in 1 blocks are still reachable in loss record 19 of 83
+==1988672==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988672==    by 0x10A22B: create_new_cmd (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x10A5BD: process_token (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988672== 
+==1988672== 24 bytes in 1 blocks are still reachable in loss record 20 of 83
+==1988672==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988672==    by 0x10A28D: create_new_argv (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x10A346: add_arg (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x10A65A: process_token (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988672== 
+==1988672== 24 bytes in 1 blocks are still reachable in loss record 21 of 83
+==1988672==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988672==    by 0x109B38: add_token_with_quote (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x109EF0: handle_quote_in_tokenize (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x10A0AD: tokenize (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988672== 
+==1988672== 24 bytes in 1 blocks are still reachable in loss record 22 of 83
+==1988672==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988672==    by 0x1098EC: add_token (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x109E06: handle_special_token (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x109CD1: process_special (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x10A040: tokenize (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988672== 
+==1988672== 24 bytes in 1 blocks are still reachable in loss record 23 of 83
+==1988672==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988672==    by 0x10A41E: add_redir (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x10A58E: handle_redir_token (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x10A691: process_token (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988672== 
+==1988672== 27 bytes in 3 blocks are still reachable in loss record 24 of 83
+==1988672==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988672==    by 0x10CF2D: ft_strjoin (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x10B5A4: handle_regular_char (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x10B778: expand_env_vars (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x10A1DE: expand_tokens (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x1093AA: process_input (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988672== 
+==1988672== 480 bytes in 1 blocks are still reachable in loss record 39 of 83
+==1988672==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988672==    by 0x10956A: allocate_env (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988672== 
+==1988672== 480 bytes in 1 blocks are still reachable in loss record 40 of 83
+==1988672==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988672==    by 0x109588: allocate_env (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988672== 
+==1988672== 751 bytes in 59 blocks are still reachable in loss record 43 of 83
+==1988672==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988672==    by 0x10CE73: ft_substr (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x109647: parse_env_var (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x1096E7: init_env (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988672== 
+==1988672== 2,824 bytes in 59 blocks are still reachable in loss record 58 of 83
+==1988672==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988672==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x109670: parse_env_var (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x1096E7: init_env (in /home/djang/mini_temp3/minishell)
+==1988672==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988672== 
+==1988672== LEAK SUMMARY:
+==1988672==    definitely lost: 0 bytes in 0 blocks
+==1988672==    indirectly lost: 0 bytes in 0 blocks
+==1988672==      possibly lost: 0 bytes in 0 blocks
+==1988672==    still reachable: 4,783 bytes in 135 blocks
+==1988672==         suppressed: 208,558 bytes in 241 blocks
+==1988672== 
+==1988672== For lists of detected and suppressed errors, rerun with: -s
+==1988672== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+
+minishell$ echo "appended content" >> test.txt
+==1988699== 
+==1988699== HEAP SUMMARY:
+==1988699==     in use at exit: 213,465 bytes in 382 blocks
+==1988699==   total heap usage: 1,004 allocs, 622 frees, 238,813 bytes allocated
+==1988699== 
+==1988699== 3 bytes in 1 blocks are still reachable in loss record 2 of 86
+==1988699==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988699==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x109912: add_token (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x109D3C: handle_special_token (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x109CD1: process_special (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x10A040: tokenize (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988699== 
+==1988699== 9 bytes in 1 blocks are still reachable in loss record 5 of 86
+==1988699==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988699==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x10A43E: add_redir (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x10A58E: handle_redir_token (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x10A691: process_token (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988699== 
+==1988699== 22 bytes in 2 blocks are still reachable in loss record 14 of 86
+==1988699==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988699==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x10A391: add_arg (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x10A65A: process_token (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988699== 
+==1988699== 24 bytes in 1 blocks are still reachable in loss record 15 of 86
+==1988699==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988699==    by 0x109537: allocate_env (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988699== 
+==1988699== 24 bytes in 1 blocks are still reachable in loss record 18 of 86
+==1988699==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988699==    by 0x1098EC: add_token (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x109C51: process_blank (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x109FEA: tokenize (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988699== 
+==1988699== 24 bytes in 1 blocks are still reachable in loss record 19 of 86
+==1988699==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988699==    by 0x109B38: add_token_with_quote (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x109F43: finalize_tokenize (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x10A170: tokenize (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988699== 
+==1988699== 24 bytes in 1 blocks are still reachable in loss record 20 of 86
+==1988699==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988699==    by 0x10A22B: create_new_cmd (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x10A5BD: process_token (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988699== 
+==1988699== 24 bytes in 1 blocks are still reachable in loss record 21 of 86
+==1988699==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988699==    by 0x10A28D: create_new_argv (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x10A346: add_arg (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x10A65A: process_token (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988699== 
+==1988699== 24 bytes in 1 blocks are still reachable in loss record 22 of 86
+==1988699==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988699==    by 0x109B38: add_token_with_quote (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x109EF0: handle_quote_in_tokenize (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x10A0AD: tokenize (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988699== 
+==1988699== 24 bytes in 1 blocks are still reachable in loss record 23 of 86
+==1988699==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988699==    by 0x10A41E: add_redir (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x10A58E: handle_redir_token (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x10A691: process_token (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988699== 
+==1988699== 24 bytes in 1 blocks are still reachable in loss record 25 of 86
+==1988699==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988699==    by 0x1098EC: add_token (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x109D3C: handle_special_token (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x109CD1: process_special (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x10A040: tokenize (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988699== 
+==1988699== 31 bytes in 3 blocks are still reachable in loss record 27 of 86
+==1988699==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988699==    by 0x10CF2D: ft_strjoin (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x10B5A4: handle_regular_char (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x10B778: expand_env_vars (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x10A1DE: expand_tokens (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x1093AA: process_input (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988699== 
+==1988699== 480 bytes in 1 blocks are still reachable in loss record 42 of 86
+==1988699==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988699==    by 0x10956A: allocate_env (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988699== 
+==1988699== 480 bytes in 1 blocks are still reachable in loss record 43 of 86
+==1988699==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988699==    by 0x109588: allocate_env (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988699== 
+==1988699== 751 bytes in 59 blocks are still reachable in loss record 46 of 86
+==1988699==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988699==    by 0x10CE73: ft_substr (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x109647: parse_env_var (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x1096E7: init_env (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988699== 
+==1988699== 2,824 bytes in 59 blocks are still reachable in loss record 61 of 86
+==1988699==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988699==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x109670: parse_env_var (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x1096E7: init_env (in /home/djang/mini_temp3/minishell)
+==1988699==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988699== 
+==1988699== LEAK SUMMARY:
+==1988699==    definitely lost: 0 bytes in 0 blocks
+==1988699==    indirectly lost: 0 bytes in 0 blocks
+==1988699==      possibly lost: 0 bytes in 0 blocks
+==1988699==    still reachable: 4,792 bytes in 135 blocks
+==1988699==         suppressed: 208,673 bytes in 247 blocks
+==1988699== 
+==1988699== For lists of detected and suppressed errors, rerun with: -s
+==1988699== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+
+minishell$ cat << EOF
+> hello
+> world
+> EOF
+==1988740== 
+==1988740== HEAP SUMMARY:
+==1988740==     in use at exit: 213,545 bytes in 391 blocks
+==1988740==   total heap usage: 1,168 allocs, 777 frees, 273,676 bytes allocated
+==1988740== 
+==1988740== 3 bytes in 1 blocks are still reachable in loss record 2 of 85
+==1988740==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988740==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x109912: add_token (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x109D8A: handle_special_token (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x109CD1: process_special (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x10A040: tokenize (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988740== 
+==1988740== 4 bytes in 1 blocks are still reachable in loss record 5 of 85
+==1988740==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988740==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x10A391: add_arg (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x10A65A: process_token (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988740== 
+==1988740== 4 bytes in 1 blocks are still reachable in loss record 6 of 85
+==1988740==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988740==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x10A43E: add_redir (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x10A58E: handle_redir_token (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x10A691: process_token (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988740== 
+==1988740== 8 bytes in 2 blocks are still reachable in loss record 9 of 85
+==1988740==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988740==    by 0x10CF2D: ft_strjoin (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x10B5A4: handle_regular_char (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x10B778: expand_env_vars (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x10A1DE: expand_tokens (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x1093AA: process_input (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988740== 
+==1988740== 16 bytes in 1 blocks are still reachable in loss record 16 of 85
+==1988740==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988740==    by 0x10A28D: create_new_argv (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x10A346: add_arg (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x10A65A: process_token (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988740== 
+==1988740== 24 bytes in 1 blocks are still reachable in loss record 18 of 85
+==1988740==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988740==    by 0x109537: allocate_env (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988740== 
+==1988740== 24 bytes in 1 blocks are still reachable in loss record 21 of 85
+==1988740==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988740==    by 0x1098EC: add_token (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x109C51: process_blank (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x109FEA: tokenize (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988740== 
+==1988740== 24 bytes in 1 blocks are still reachable in loss record 22 of 85
+==1988740==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988740==    by 0x109B38: add_token_with_quote (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x109F43: finalize_tokenize (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x10A170: tokenize (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988740== 
+==1988740== 24 bytes in 1 blocks are still reachable in loss record 23 of 85
+==1988740==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988740==    by 0x10A22B: create_new_cmd (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x10A5BD: process_token (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988740== 
+==1988740== 24 bytes in 1 blocks are still reachable in loss record 24 of 85
+==1988740==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988740==    by 0x10A41E: add_redir (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x10A58E: handle_redir_token (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x10A691: process_token (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988740== 
+==1988740== 24 bytes in 1 blocks are still reachable in loss record 26 of 85
+==1988740==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988740==    by 0x1098EC: add_token (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x109D8A: handle_special_token (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x109CD1: process_special (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x10A040: tokenize (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988740== 
+==1988740== 480 bytes in 1 blocks are still reachable in loss record 41 of 85
+==1988740==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988740==    by 0x10956A: allocate_env (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988740== 
+==1988740== 480 bytes in 1 blocks are still reachable in loss record 42 of 85
+==1988740==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988740==    by 0x109588: allocate_env (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988740== 
+==1988740== 751 bytes in 59 blocks are still reachable in loss record 45 of 85
+==1988740==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988740==    by 0x10CE73: ft_substr (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x109647: parse_env_var (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x1096E7: init_env (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988740== 
+==1988740== 2,824 bytes in 59 blocks are still reachable in loss record 60 of 85
+==1988740==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988740==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x109670: parse_env_var (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x1096E7: init_env (in /home/djang/mini_temp3/minishell)
+==1988740==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988740== 
+==1988740== LEAK SUMMARY:
+==1988740==    definitely lost: 0 bytes in 0 blocks
+==1988740==    indirectly lost: 0 bytes in 0 blocks
+==1988740==      possibly lost: 0 bytes in 0 blocks
+==1988740==    still reachable: 4,714 bytes in 132 blocks
+==1988740==         suppressed: 208,831 bytes in 259 blocks
+==1988740== 
+==1988740== For lists of detected and suppressed errors, rerun with: -s
+==1988740== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+open: No such file or directory
+==1988746== 
+==1988746== HEAP SUMMARY:
+==1988746==     in use at exit: 213,576 bytes in 391 blocks
+==1988746==   total heap usage: 1,154 allocs, 763 frees, 273,539 bytes allocated
+==1988746== 
+==1988746== 3 bytes in 1 blocks are still reachable in loss record 2 of 85
+==1988746==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988746==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x109912: add_token (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x109D8A: handle_special_token (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x109CD1: process_special (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x10A040: tokenize (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988746== 
+==1988746== 4 bytes in 1 blocks are still reachable in loss record 3 of 85
+==1988746==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988746==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x10A391: add_arg (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x10A65A: process_token (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988746== 
+==1988746== 8 bytes in 2 blocks are still reachable in loss record 6 of 85
+==1988746==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988746==    by 0x10CF2D: ft_strjoin (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x10B5A4: handle_regular_char (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x10B778: expand_env_vars (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x10A1DE: expand_tokens (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x1093AA: process_input (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988746== 
+==1988746== 16 bytes in 1 blocks are still reachable in loss record 15 of 85
+==1988746==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988746==    by 0x10A28D: create_new_argv (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x10A346: add_arg (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x10A65A: process_token (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988746== 
+==1988746== 17 bytes in 1 blocks are still reachable in loss record 16 of 85
+==1988746==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988746==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x10B0A2: create_temp_file (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x10B235: process_heredoc_redir (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x10B28A: handle_heredoc (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x10AF3A: execute_cmd (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x1093D8: process_input (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988746== 
+==1988746== 24 bytes in 1 blocks are still reachable in loss record 18 of 85
+==1988746==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988746==    by 0x109537: allocate_env (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988746== 
+==1988746== 24 bytes in 1 blocks are still reachable in loss record 21 of 85
+==1988746==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988746==    by 0x1098EC: add_token (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x109C51: process_blank (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x109FEA: tokenize (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988746== 
+==1988746== 24 bytes in 1 blocks are still reachable in loss record 22 of 85
+==1988746==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988746==    by 0x109B38: add_token_with_quote (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x109F43: finalize_tokenize (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x10A170: tokenize (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988746== 
+==1988746== 24 bytes in 1 blocks are still reachable in loss record 23 of 85
+==1988746==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988746==    by 0x10A22B: create_new_cmd (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x10A5BD: process_token (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988746== 
+==1988746== 24 bytes in 1 blocks are still reachable in loss record 24 of 85
+==1988746==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988746==    by 0x10A41E: add_redir (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x10A58E: handle_redir_token (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x10A691: process_token (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988746== 
+==1988746== 24 bytes in 1 blocks are still reachable in loss record 26 of 85
+==1988746==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988746==    by 0x1098EC: add_token (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x109D8A: handle_special_token (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x109CD1: process_special (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x10A040: tokenize (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988746== 
+==1988746== 480 bytes in 1 blocks are still reachable in loss record 41 of 85
+==1988746==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988746==    by 0x10956A: allocate_env (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988746== 
+==1988746== 480 bytes in 1 blocks are still reachable in loss record 42 of 85
+==1988746==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988746==    by 0x109588: allocate_env (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988746== 
+==1988746== 751 bytes in 59 blocks are still reachable in loss record 45 of 85
+==1988746==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988746==    by 0x10CE73: ft_substr (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x109647: parse_env_var (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x1096E7: init_env (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988746== 
+==1988746== 2,824 bytes in 59 blocks are still reachable in loss record 60 of 85
+==1988746==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988746==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x109670: parse_env_var (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x1096E7: init_env (in /home/djang/mini_temp3/minishell)
+==1988746==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988746== 
+==1988746== LEAK SUMMARY:
+==1988746==    definitely lost: 0 bytes in 0 blocks
+==1988746==    indirectly lost: 0 bytes in 0 blocks
+==1988746==      possibly lost: 0 bytes in 0 blocks
+==1988746==    still reachable: 4,727 bytes in 132 blocks
+==1988746==         suppressed: 208,849 bytes in 259 blocks
+==1988746== 
+==1988746== For lists of detected and suppressed errors, rerun with: -s
+==1988746== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+
+minishell$ echo hello | cat > output.txt
+==1988848== 
+==1988848== HEAP SUMMARY:
+==1988848==     in use at exit: 213,343 bytes in 380 blocks
+==1988848==   total heap usage: 742 allocs, 362 frees, 235,268 bytes allocated
+==1988848== 
+==1988848== 2 bytes in 1 blocks are still reachable in loss record 1 of 85
+==1988848==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988848==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x109912: add_token (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x109DD8: handle_special_token (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x109CD1: process_special (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x10A040: tokenize (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988848== 
+==1988848== 2 bytes in 1 blocks are still reachable in loss record 2 of 85
+==1988848==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988848==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x109912: add_token (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x109E06: handle_special_token (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x109CD1: process_special (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x10A040: tokenize (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988848== 
+==1988848== 11 bytes in 1 blocks are still reachable in loss record 5 of 85
+==1988848==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988848==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x10A43E: add_redir (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x10A58E: handle_redir_token (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x10A691: process_token (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988848== 
+==1988848== 15 bytes in 3 blocks are still reachable in loss record 12 of 85
+==1988848==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988848==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x10A391: add_arg (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x10A65A: process_token (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988848== 
+==1988848== 24 bytes in 1 blocks are still reachable in loss record 15 of 85
+==1988848==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988848==    by 0x109537: allocate_env (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988848== 
+==1988848== 24 bytes in 1 blocks are still reachable in loss record 18 of 85
+==1988848==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988848==    by 0x109B38: add_token_with_quote (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x109F43: finalize_tokenize (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x10A170: tokenize (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988848== 
+==1988848== 24 bytes in 1 blocks are still reachable in loss record 19 of 85
+==1988848==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988848==    by 0x10A22B: create_new_cmd (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x10A5BD: process_token (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988848== 
+==1988848== 24 bytes in 1 blocks are still reachable in loss record 20 of 85
+==1988848==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988848==    by 0x1098EC: add_token (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x109DD8: handle_special_token (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x109CD1: process_special (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x10A040: tokenize (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988848== 
+==1988848== 24 bytes in 1 blocks are still reachable in loss record 21 of 85
+==1988848==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988848==    by 0x1098EC: add_token (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x109E06: handle_special_token (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x109CD1: process_special (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x10A040: tokenize (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988848== 
+==1988848== 24 bytes in 1 blocks are still reachable in loss record 22 of 85
+==1988848==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988848==    by 0x10A22B: create_new_cmd (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x10A4D6: handle_pipe_token (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x10A60C: process_token (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988848== 
+==1988848== 24 bytes in 1 blocks are still reachable in loss record 23 of 85
+==1988848==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988848==    by 0x10A41E: add_redir (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x10A58E: handle_redir_token (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x10A691: process_token (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988848== 
+==1988848== 26 bytes in 4 blocks are still reachable in loss record 24 of 85
+==1988848==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988848==    by 0x10CF2D: ft_strjoin (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x10B5A4: handle_regular_char (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x10B778: expand_env_vars (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x10A1DE: expand_tokens (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x1093AA: process_input (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988848== 
+==1988848== 40 bytes in 2 blocks are still reachable in loss record 26 of 85
+==1988848==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988848==    by 0x10A28D: create_new_argv (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x10A346: add_arg (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x10A65A: process_token (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988848== 
+==1988848== 72 bytes in 3 blocks are still reachable in loss record 31 of 85
+==1988848==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988848==    by 0x1098EC: add_token (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x109C51: process_blank (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x109FEA: tokenize (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988848== 
+==1988848== 480 bytes in 1 blocks are still reachable in loss record 41 of 85
+==1988848==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988848==    by 0x10956A: allocate_env (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988848== 
+==1988848== 480 bytes in 1 blocks are still reachable in loss record 42 of 85
+==1988848==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988848==    by 0x109588: allocate_env (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988848== 
+==1988848== 751 bytes in 59 blocks are still reachable in loss record 45 of 85
+==1988848==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988848==    by 0x10CE73: ft_substr (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x109647: parse_env_var (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x1096E7: init_env (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988848== 
+==1988848== 2,824 bytes in 59 blocks are still reachable in loss record 60 of 85
+==1988848==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988848==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x109670: parse_env_var (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x1096E7: init_env (in /home/djang/mini_temp3/minishell)
+==1988848==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988848== 
+==1988848== LEAK SUMMARY:
+==1988848==    definitely lost: 0 bytes in 0 blocks
+==1988848==    indirectly lost: 0 bytes in 0 blocks
+==1988848==      possibly lost: 0 bytes in 0 blocks
+==1988848==    still reachable: 4,871 bytes in 142 blocks
+==1988848==         suppressed: 208,472 bytes in 238 blocks
+==1988848== 
+==1988848== For lists of detected and suppressed errors, rerun with: -s
+==1988848== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+minishell$ echo $HOME > home.txt
+==1988875== 
+==1988875== HEAP SUMMARY:
+==1988875==     in use at exit: 213,355 bytes in 379 blocks
+==1988875==   total heap usage: 844 allocs, 465 frees, 302,277 bytes allocated
+==1988875== 
+==1988875== 2 bytes in 1 blocks are still reachable in loss record 1 of 83
+==1988875==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988875==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x109912: add_token (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x109E06: handle_special_token (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x109CD1: process_special (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x10A040: tokenize (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988875== 
+==1988875== 9 bytes in 1 blocks are still reachable in loss record 4 of 83
+==1988875==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988875==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x10A43E: add_redir (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x10A58E: handle_redir_token (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x10A691: process_token (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988875== 
+==1988875== 12 bytes in 1 blocks are still reachable in loss record 8 of 83
+==1988875==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988875==    by 0x10CF2D: ft_strjoin (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x10B484: handle_env_var (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x10B699: process_dollar_expansion (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x10B75B: expand_env_vars (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x10A1DE: expand_tokens (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x1093AA: process_input (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988875== 
+==1988875== 14 bytes in 2 blocks are still reachable in loss record 11 of 83
+==1988875==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988875==    by 0x10CF2D: ft_strjoin (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x10B5A4: handle_regular_char (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x10B778: expand_env_vars (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x10A1DE: expand_tokens (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x1093AA: process_input (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988875== 
+==1988875== 17 bytes in 2 blocks are still reachable in loss record 14 of 83
+==1988875==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988875==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x10A391: add_arg (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x10A65A: process_token (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988875== 
+==1988875== 24 bytes in 1 blocks are still reachable in loss record 17 of 83
+==1988875==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988875==    by 0x109537: allocate_env (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988875== 
+==1988875== 24 bytes in 1 blocks are still reachable in loss record 20 of 83
+==1988875==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988875==    by 0x109B38: add_token_with_quote (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x109F43: finalize_tokenize (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x10A170: tokenize (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988875== 
+==1988875== 24 bytes in 1 blocks are still reachable in loss record 21 of 83
+==1988875==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988875==    by 0x10A22B: create_new_cmd (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x10A5BD: process_token (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988875== 
+==1988875== 24 bytes in 1 blocks are still reachable in loss record 22 of 83
+==1988875==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988875==    by 0x10A28D: create_new_argv (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x10A346: add_arg (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x10A65A: process_token (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988875== 
+==1988875== 24 bytes in 1 blocks are still reachable in loss record 23 of 83
+==1988875==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988875==    by 0x1098EC: add_token (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x109E06: handle_special_token (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x109CD1: process_special (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x10A040: tokenize (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988875== 
+==1988875== 24 bytes in 1 blocks are still reachable in loss record 24 of 83
+==1988875==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988875==    by 0x10A41E: add_redir (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x10A58E: handle_redir_token (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x10A691: process_token (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988875== 
+==1988875== 48 bytes in 2 blocks are still reachable in loss record 28 of 83
+==1988875==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988875==    by 0x1098EC: add_token (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x109C51: process_blank (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x109FEA: tokenize (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988875== 
+==1988875== 480 bytes in 1 blocks are still reachable in loss record 39 of 83
+==1988875==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988875==    by 0x10956A: allocate_env (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988875== 
+==1988875== 480 bytes in 1 blocks are still reachable in loss record 40 of 83
+==1988875==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988875==    by 0x109588: allocate_env (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988875== 
+==1988875== 751 bytes in 59 blocks are still reachable in loss record 43 of 83
+==1988875==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988875==    by 0x10CE73: ft_substr (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x109647: parse_env_var (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x1096E7: init_env (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988875== 
+==1988875== 2,824 bytes in 59 blocks are still reachable in loss record 58 of 83
+==1988875==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988875==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x109670: parse_env_var (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x1096E7: init_env (in /home/djang/mini_temp3/minishell)
+==1988875==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988875== 
+==1988875== LEAK SUMMARY:
+==1988875==    definitely lost: 0 bytes in 0 blocks
+==1988875==    indirectly lost: 0 bytes in 0 blocks
+==1988875==      possibly lost: 0 bytes in 0 blocks
+==1988875==    still reachable: 4,781 bytes in 135 blocks
+==1988875==         suppressed: 208,574 bytes in 244 blocks
+==1988875== 
+==1988875== For lists of detected and suppressed errors, rerun with: -s
+==1988875== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+minishell$ echo "User: $USER" >> home.txt
+==1988953== 
+==1988953== HEAP SUMMARY:
+==1988953==     in use at exit: 213,482 bytes in 385 blocks
+==1988953==   total heap usage: 940 allocs, 555 frees, 336,306 bytes allocated
+==1988953== 
+==1988953== 3 bytes in 1 blocks are still reachable in loss record 1 of 84
+==1988953==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988953==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x109912: add_token (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x109D3C: handle_special_token (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x109CD1: process_special (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x10A040: tokenize (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988953== 
+==1988953== 9 bytes in 1 blocks are still reachable in loss record 4 of 84
+==1988953==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988953==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x10A43E: add_redir (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x10A58E: handle_redir_token (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x10A691: process_token (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988953== 
+==1988953== 12 bytes in 1 blocks are still reachable in loss record 8 of 84
+==1988953==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988953==    by 0x10CF2D: ft_strjoin (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x10B484: handle_env_var (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x10B699: process_dollar_expansion (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x10B75B: expand_env_vars (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x10A1DE: expand_tokens (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x1093AA: process_input (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988953== 
+==1988953== 14 bytes in 2 blocks are still reachable in loss record 11 of 84
+==1988953==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988953==    by 0x10CF2D: ft_strjoin (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x10B5A4: handle_regular_char (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x10B778: expand_env_vars (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x10A1DE: expand_tokens (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x1093AA: process_input (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988953== 
+==1988953== 17 bytes in 2 blocks are still reachable in loss record 14 of 84
+==1988953==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988953==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x10A391: add_arg (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x10A65A: process_token (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988953== 
+==1988953== 24 bytes in 1 blocks are still reachable in loss record 16 of 84
+==1988953==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988953==    by 0x109537: allocate_env (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988953== 
+==1988953== 24 bytes in 1 blocks are still reachable in loss record 19 of 84
+==1988953==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988953==    by 0x1098EC: add_token (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x109C51: process_blank (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x109FEA: tokenize (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988953== 
+==1988953== 24 bytes in 1 blocks are still reachable in loss record 20 of 84
+==1988953==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988953==    by 0x109B38: add_token_with_quote (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x109F43: finalize_tokenize (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x10A170: tokenize (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988953== 
+==1988953== 24 bytes in 1 blocks are still reachable in loss record 21 of 84
+==1988953==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988953==    by 0x10A22B: create_new_cmd (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x10A5BD: process_token (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988953== 
+==1988953== 24 bytes in 1 blocks are still reachable in loss record 22 of 84
+==1988953==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988953==    by 0x10A28D: create_new_argv (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x10A346: add_arg (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x10A65A: process_token (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988953== 
+==1988953== 24 bytes in 1 blocks are still reachable in loss record 23 of 84
+==1988953==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988953==    by 0x10A41E: add_redir (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x10A58E: handle_redir_token (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x10A691: process_token (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988953== 
+==1988953== 24 bytes in 1 blocks are still reachable in loss record 24 of 84
+==1988953==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988953==    by 0x109B38: add_token_with_quote (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x109EF0: handle_quote_in_tokenize (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x10A0AD: tokenize (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988953== 
+==1988953== 24 bytes in 1 blocks are still reachable in loss record 25 of 84
+==1988953==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988953==    by 0x1098EC: add_token (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x109D3C: handle_special_token (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x109CD1: process_special (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x10A040: tokenize (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1988953== 
+==1988953== 480 bytes in 1 blocks are still reachable in loss record 40 of 84
+==1988953==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988953==    by 0x10956A: allocate_env (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988953== 
+==1988953== 480 bytes in 1 blocks are still reachable in loss record 41 of 84
+==1988953==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988953==    by 0x109588: allocate_env (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988953== 
+==1988953== 751 bytes in 59 blocks are still reachable in loss record 44 of 84
+==1988953==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988953==    by 0x10CE73: ft_substr (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x109647: parse_env_var (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x1096E7: init_env (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988953== 
+==1988953== 2,824 bytes in 59 blocks are still reachable in loss record 59 of 84
+==1988953==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1988953==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x109670: parse_env_var (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x1096E7: init_env (in /home/djang/mini_temp3/minishell)
+==1988953==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1988953== 
+==1988953== LEAK SUMMARY:
+==1988953==    definitely lost: 0 bytes in 0 blocks
+==1988953==    indirectly lost: 0 bytes in 0 blocks
+==1988953==      possibly lost: 0 bytes in 0 blocks
+==1988953==    still reachable: 4,782 bytes in 135 blocks
+==1988953==         suppressed: 208,700 bytes in 250 blocks
+==1988953== 
+==1988953== For lists of detected and suppressed errors, rerun with: -s
+==1988953== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+
+minishell$ echo hello |
+==1989032== 
+==1989032== HEAP SUMMARY:
+==1989032==     in use at exit: 213,964 bytes in 404 blocks
+==1989032==   total heap usage: 1,092 allocs, 688 frees, 338,379 bytes allocated
+==1989032== 
+==1989032== 2 bytes in 1 blocks are still reachable in loss record 1 of 84
+==1989032==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989032==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x109912: add_token (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x109DD8: handle_special_token (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x109CD1: process_special (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x10A040: tokenize (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1989032== 
+==1989032== 11 bytes in 2 blocks are still reachable in loss record 5 of 84
+==1989032==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989032==    by 0x10CF2D: ft_strjoin (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x10B5A4: handle_regular_char (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x10B778: expand_env_vars (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x10A1DE: expand_tokens (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x1093AA: process_input (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1989032== 
+==1989032== 11 bytes in 2 blocks are still reachable in loss record 6 of 84
+==1989032==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989032==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x10A391: add_arg (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x10A65A: process_token (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1989032== 
+==1989032== 24 bytes in 1 blocks are still reachable in loss record 15 of 84
+==1989032==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989032==    by 0x109537: allocate_env (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1989032== 
+==1989032== 24 bytes in 1 blocks are still reachable in loss record 18 of 84
+==1989032==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989032==    by 0x10A22B: create_new_cmd (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x10A5BD: process_token (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1989032== 
+==1989032== 24 bytes in 1 blocks are still reachable in loss record 19 of 84
+==1989032==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989032==    by 0x10A28D: create_new_argv (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x10A346: add_arg (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x10A65A: process_token (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1989032== 
+==1989032== 24 bytes in 1 blocks are still reachable in loss record 20 of 84
+==1989032==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989032==    by 0x1098EC: add_token (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x109DD8: handle_special_token (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x109CD1: process_special (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x10A040: tokenize (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1989032== 
+==1989032== 24 bytes in 1 blocks are still reachable in loss record 21 of 84
+==1989032==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989032==    by 0x10A22B: create_new_cmd (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x10A4D6: handle_pipe_token (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x10A60C: process_token (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1989032== 
+==1989032== 48 bytes in 2 blocks are still reachable in loss record 27 of 84
+==1989032==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989032==    by 0x1098EC: add_token (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x109C51: process_blank (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x109FEA: tokenize (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1989032== 
+==1989032== 480 bytes in 1 blocks are still reachable in loss record 40 of 84
+==1989032==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989032==    by 0x10956A: allocate_env (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1989032== 
+==1989032== 480 bytes in 1 blocks are still reachable in loss record 41 of 84
+==1989032==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989032==    by 0x109588: allocate_env (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1989032== 
+==1989032== 751 bytes in 59 blocks are still reachable in loss record 44 of 84
+==1989032==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989032==    by 0x10CE73: ft_substr (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x109647: parse_env_var (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x1096E7: init_env (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1989032== 
+==1989032== 2,824 bytes in 59 blocks are still reachable in loss record 59 of 84
+==1989032==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989032==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x109670: parse_env_var (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x1096E7: init_env (in /home/djang/mini_temp3/minishell)
+==1989032==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1989032== 
+==1989032== LEAK SUMMARY:
+==1989032==    definitely lost: 0 bytes in 0 blocks
+==1989032==    indirectly lost: 0 bytes in 0 blocks
+==1989032==      possibly lost: 0 bytes in 0 blocks
+==1989032==    still reachable: 4,727 bytes in 132 blocks
+==1989032==         suppressed: 209,237 bytes in 272 blocks
+==1989032== 
+==1989032== For lists of detected and suppressed errors, rerun with: -s
+==1989032== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+
+minishell$ echo "unclosed quote
+minishell: unexpected EOF while looking for matching quote
+execvp: No such file or directory
+==1989078== 
+==1989078== HEAP SUMMARY:
+==1989078==     in use at exit: 213,997 bytes in 404 blocks
+==1989078==   total heap usage: 1,142 allocs, 738 frees, 339,037 bytes allocated
+==1989078== 
+==1989078== 15 bytes in 1 blocks are still reachable in loss record 9 of 81
+==1989078==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989078==    by 0x10CF2D: ft_strjoin (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x10B5A4: handle_regular_char (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x10B778: expand_env_vars (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x10A1DE: expand_tokens (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x1093AA: process_input (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1989078== 
+==1989078== 15 bytes in 1 blocks are still reachable in loss record 10 of 81
+==1989078==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989078==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x10A391: add_arg (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x10A65A: process_token (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1989078== 
+==1989078== 16 bytes in 1 blocks are still reachable in loss record 12 of 81
+==1989078==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989078==    by 0x10A28D: create_new_argv (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x10A346: add_arg (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x10A65A: process_token (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1989078== 
+==1989078== 24 bytes in 1 blocks are still reachable in loss record 15 of 81
+==1989078==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989078==    by 0x109537: allocate_env (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1989078== 
+==1989078== 24 bytes in 1 blocks are still reachable in loss record 18 of 81
+==1989078==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989078==    by 0x109B38: add_token_with_quote (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x109F43: finalize_tokenize (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x10A170: tokenize (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1989078== 
+==1989078== 24 bytes in 1 blocks are still reachable in loss record 19 of 81
+==1989078==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989078==    by 0x10A22B: create_new_cmd (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x10A5BD: process_token (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1989078== 
+==1989078== 480 bytes in 1 blocks are still reachable in loss record 37 of 81
+==1989078==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989078==    by 0x10956A: allocate_env (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1989078== 
+==1989078== 480 bytes in 1 blocks are still reachable in loss record 38 of 81
+==1989078==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989078==    by 0x109588: allocate_env (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1989078== 
+==1989078== 751 bytes in 59 blocks are still reachable in loss record 41 of 81
+==1989078==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989078==    by 0x10CE73: ft_substr (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x109647: parse_env_var (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x1096E7: init_env (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1989078== 
+==1989078== 2,824 bytes in 59 blocks are still reachable in loss record 56 of 81
+==1989078==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989078==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x109670: parse_env_var (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x1096E7: init_env (in /home/djang/mini_temp3/minishell)
+==1989078==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1989078== 
+==1989078== LEAK SUMMARY:
+==1989078==    definitely lost: 0 bytes in 0 blocks
+==1989078==    indirectly lost: 0 bytes in 0 blocks
+==1989078==      possibly lost: 0 bytes in 0 blocks
+==1989078==    still reachable: 4,653 bytes in 126 blocks
+==1989078==         suppressed: 209,344 bytes in 278 blocks
+==1989078== 
+==1989078== For lists of detected and suppressed errors, rerun with: -s
+==1989078== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+
+minishell$ echo 'unclosed quote
+minishell: unexpected EOF while looking for matching quote
+execvp: No such file or directory
+==1989142== 
+==1989142== HEAP SUMMARY:
+==1989142==     in use at exit: 214,096 bytes in 410 blocks
+==1989142==   total heap usage: 1,234 allocs, 824 frees, 340,471 bytes allocated
+==1989142== 
+==1989142== 15 bytes in 1 blocks are still reachable in loss record 9 of 81
+==1989142==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989142==    by 0x10CF2D: ft_strjoin (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x10B5A4: handle_regular_char (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x10B778: expand_env_vars (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x10A1DE: expand_tokens (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x1093AA: process_input (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1989142== 
+==1989142== 15 bytes in 1 blocks are still reachable in loss record 10 of 81
+==1989142==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989142==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x10A391: add_arg (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x10A65A: process_token (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1989142== 
+==1989142== 16 bytes in 1 blocks are still reachable in loss record 12 of 81
+==1989142==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989142==    by 0x10A28D: create_new_argv (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x10A346: add_arg (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x10A65A: process_token (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1989142== 
+==1989142== 24 bytes in 1 blocks are still reachable in loss record 15 of 81
+==1989142==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989142==    by 0x109537: allocate_env (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1989142== 
+==1989142== 24 bytes in 1 blocks are still reachable in loss record 18 of 81
+==1989142==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989142==    by 0x109B38: add_token_with_quote (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x109F43: finalize_tokenize (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x10A170: tokenize (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1989142== 
+==1989142== 24 bytes in 1 blocks are still reachable in loss record 19 of 81
+==1989142==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989142==    by 0x10A22B: create_new_cmd (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x10A5BD: process_token (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1989142== 
+==1989142== 480 bytes in 1 blocks are still reachable in loss record 37 of 81
+==1989142==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989142==    by 0x10956A: allocate_env (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1989142== 
+==1989142== 480 bytes in 1 blocks are still reachable in loss record 38 of 81
+==1989142==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989142==    by 0x109588: allocate_env (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1989142== 
+==1989142== 751 bytes in 59 blocks are still reachable in loss record 41 of 81
+==1989142==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989142==    by 0x10CE73: ft_substr (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x109647: parse_env_var (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x1096E7: init_env (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1989142== 
+==1989142== 2,824 bytes in 59 blocks are still reachable in loss record 56 of 81
+==1989142==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989142==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x109670: parse_env_var (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x1096E7: init_env (in /home/djang/mini_temp3/minishell)
+==1989142==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1989142== 
+==1989142== LEAK SUMMARY:
+==1989142==    definitely lost: 0 bytes in 0 blocks
+==1989142==    indirectly lost: 0 bytes in 0 blocks
+==1989142==      possibly lost: 0 bytes in 0 blocks
+==1989142==    still reachable: 4,653 bytes in 126 blocks
+==1989142==         suppressed: 209,443 bytes in 284 blocks
+==1989142== 
+==1989142== For lists of detected and suppressed errors, rerun with: -s
+==1989142== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+
+minishell$ echo hello | cat | cat | cat | cat | cat
+hello
+==1989267== 
+==1989267== HEAP SUMMARY:
+==1989267==     in use at exit: 215,118 bytes in 478 blocks
+==1989267==   total heap usage: 1,546 allocs, 1,068 frees, 344,488 bytes allocated
+==1989267== 
+==1989267== 10 bytes in 5 blocks are still reachable in loss record 4 of 85
+==1989267==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989267==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x109912: add_token (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x109DD8: handle_special_token (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x109CD1: process_special (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x10A040: tokenize (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1989267== 
+==1989267== 24 bytes in 1 blocks are still reachable in loss record 12 of 85
+==1989267==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989267==    by 0x109537: allocate_env (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1989267== 
+==1989267== 24 bytes in 1 blocks are still reachable in loss record 15 of 85
+==1989267==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989267==    by 0x109B38: add_token_with_quote (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x109F43: finalize_tokenize (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x10A170: tokenize (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1989267== 
+==1989267== 24 bytes in 1 blocks are still reachable in loss record 16 of 85
+==1989267==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989267==    by 0x10A22B: create_new_cmd (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x10A5BD: process_token (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1989267== 
+==1989267== 31 bytes in 7 blocks are still reachable in loss record 18 of 85
+==1989267==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989267==    by 0x10CF2D: ft_strjoin (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x10B5A4: handle_regular_char (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x10B778: expand_env_vars (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x10A1DE: expand_tokens (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x1093AA: process_input (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1989267== 
+==1989267== 31 bytes in 7 blocks are still reachable in loss record 19 of 85
+==1989267==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989267==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x10A391: add_arg (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x10A65A: process_token (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1989267== 
+==1989267== 104 bytes in 6 blocks are still reachable in loss record 30 of 85
+==1989267==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989267==    by 0x10A28D: create_new_argv (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x10A346: add_arg (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x10A65A: process_token (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1989267== 
+==1989267== 120 bytes in 5 blocks are still reachable in loss record 31 of 85
+==1989267==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989267==    by 0x1098EC: add_token (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x109DD8: handle_special_token (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x109CD1: process_special (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x10A040: tokenize (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1989267== 
+==1989267== 120 bytes in 5 blocks are still reachable in loss record 32 of 85
+==1989267==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989267==    by 0x10A22B: create_new_cmd (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x10A4D6: handle_pipe_token (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x10A60C: process_token (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x10A709: parse_tokens (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x1093BA: process_input (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1989267== 
+==1989267== 144 bytes in 6 blocks are still reachable in loss record 33 of 85
+==1989267==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989267==    by 0x1098EC: add_token (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x109C51: process_blank (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x109FEA: tokenize (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x109382: process_input (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x10945E: main_loop (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x1094BD: main (in /home/djang/mini_temp3/minishell)
+==1989267== 
+==1989267== 480 bytes in 1 blocks are still reachable in loss record 40 of 85
+==1989267==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989267==    by 0x10956A: allocate_env (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1989267== 
+==1989267== 480 bytes in 1 blocks are still reachable in loss record 41 of 85
+==1989267==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989267==    by 0x109588: allocate_env (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x1096A3: init_env (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1989267== 
+==1989267== 751 bytes in 59 blocks are still reachable in loss record 45 of 85
+==1989267==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989267==    by 0x10CE73: ft_substr (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x109647: parse_env_var (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x1096E7: init_env (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1989267== 
+==1989267== 2,824 bytes in 59 blocks are still reachable in loss record 60 of 85
+==1989267==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1989267==    by 0x10CDA4: ft_strdup (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x109670: parse_env_var (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x1096E7: init_env (in /home/djang/mini_temp3/minishell)
+==1989267==    by 0x1094A1: main (in /home/djang/mini_temp3/minishell)
+==1989267== 
+==1989267== LEAK SUMMARY:
+==1989267==    definitely lost: 0 bytes in 0 blocks
+==1989267==    indirectly lost: 0 bytes in 0 blocks
+==1989267==      possibly lost: 0 bytes in 0 blocks
+==1989267==    still reachable: 5,167 bytes in 164 blocks
+==1989267==         suppressed: 209,951 bytes in 314 blocks
+==1989267== 
+==1989267== For lists of detected and suppressed errors, rerun with: -s
+==1989267== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+
+
